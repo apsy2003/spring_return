@@ -1,0 +1,9 @@
+package com.apsy.spring;
+
+import org.springframework.stereotype.Service;
+
+/*스프링에 서비스 클래스임을 알려준다*/
+@Service
+public class BookServicelmpl implements BookService{
+
+}
