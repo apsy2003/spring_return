@@ -1,0 +1,143 @@
+html{overflow-y : scroll; overflow-x : scroll;}
+*{margin : 0; padding : 0;}
+form, fieldset, input, img{border : 0;}
+button{border : 0 transparent; cursor : pointer; overflow : visible; background : transparent;}
+a{text-decoration : none;}
+body{ font-family: 'Noto Sans', '맑은 고딕', 'Malgun Gothic', 'AppleGothic', sans-serif;}
+ul li{list-style : none;}
+a{text-decoration : none; color : #000000;}
+div{box-sizing: border-box;}
+.fl{float : left;}
+.fr{float : right;}
+.cb{clear : both;}
+.cf:after{content : ''; display : block; clear : both;}
+.hidden{display:none;}
+
+/* 헤더 작업 1 */
+
+header{width:100%; height: 140px;  /* background: #00b300; */}
+	#header{width: 100%; height:140px; margin:0 auto;}
+	#gnb{width:100%; height:40px; background: #238c00; }
+	#gnb>.gnbWrap{width:1420px; height:40px; display : block; margin : 0 auto;}
+		.gnb1{width: 100px; height:40px; }
+			.gnb1>form>select{text-align:center; border : 0px; background-color : #00ac51; color : #ffffff; width : 240px; height : 40px;}
+			.gnb1>form>select>option[value="op"]{background:#ffffff; color:#555555;}
+			
+	
+			/* form[name="searchForm"]{}; */
+			
+		.gnb2{width: 482px; height:40px;}
+			.gmenu{ float:left;}
+			.gmenu>li{width:60px; float:left;}
+			.gmenu>li>a{line-height:40px; font-size:0.9em; color:#ffffff;}
+			.gmenu>li>a:hover{text-decoration:underline;}
+			
+			.gfirst{margin-left:7px;}
+			.gtrans>li{width:60px; float:left; }
+			.gtrans>li>a{line-height:40px; font-size:0.9em; color:#ffffff;}
+			.gtrans>li>a:hover{text-decoration:underline;}
+			
+			.gsns{width:143px; margin-left:20px; }
+			.gsns>a{display:block; margin: 7px 0 0 7px; float:left;}
+			
+			
+/* 헤더 작업 2 */
+
+.nav1{width:100%; height:100px; border-bottom: 1px solid #dddddd;}
+	.sub1Wrap{width:1420px; height:100px; margin:0 auto; z-index:999999;}
+	.logo{float:left; width:240px; height:52px; margin-top:25px;}
+	.sub1{float:right; width:1120px; height:100px;}
+	.sub1_1{float:left; width:177px;  height:100px; text-align:center; }
+	.sub1_1>a{display:block; font-size:1.2em; font-weight:bold; line-height:100px;}
+	.searchbtn{float:left; margin:33px 0 0 10px;}
+	
+.nav2{width:100%; height:300px; float:right; background:#ffffff; position:absolute; border-bottom:1px solid #dddddd; z-index:999999; display : none; }
+	.sub2Wrap{width:1420px; height:267px; display : block; margin : 0 auto;}
+	.sub2Inner{width:1062px; height:267px; display : block; margin-left : 298px;}
+	.sub2{width:177px; height:300px; float: left; border-left:1px solid #dddddd; letter-spacing:-3px;}
+	.last{border-right:1px solid #dddddd;}
+	.sub2_1{ float: left; padding:20px 0 0 7px; display:none;}
+	.sub2_2{float:left; width:177px; height:30px;}
+	
+	
+	/* 컨테이너 */
+#container{width:100%; height:775px;}
+	.contentTitle{width:100%; height:149px; background:#f9f9f9;}
+		.Titlebox{width:1420px; height:149px; margin:0 auto;}
+		.Librarytitle{width:1136px; height:149px; margin-left:284px; background:#f9f9f9;}
+			.Info>li{float:left;}
+			.Info>.title{width:1136px; height:55px; font-size:1.8em; font-weight:bold; padding-top:35px;}
+			.Icoimg{margin:15px 10px 0 0;}
+			.Icon1{width:40px; height:40px; background:#ffffff; border-radius:30px; margin-left:5px; cursor:pointer;}
+				.Icon1>li{background-image: url(../images/ico_sns.png); background-repeat: no-repeat; background-position: 0px -40px; width: 40px; height: 40px; margin: 0 auto;}
+			.Icon2{width:40px; height:40px; background:#ffffff; border-radius:30px; cursor:pointer;}
+				.Icon2>li{background-image: url(../images/ico_sns.png); background-repeat: no-repeat; background-position: 0px 0px; width: 40px; height: 40px; margin: 0 auto;}
+		
+	
+	#contents{width:1420px; height:565px; background:#ffffff; margin:0 auto; }
+		.Menubar{width:240px; height:426px; z-index:1; margin-top:-146px;}
+			.menutitle{width:240px; height:142px; background:#6b64be; color:#ffffff; position:relative; border:2px solide #3d3884; box-sizing:border-box;}
+			.menutitle>img{margin-top:30px;}
+			.menutitle>span{position:absolute; top:55px; left:55px; text-align:center; font-weight:bold; font-size:2.0em; margin:0 auto;}
+				.menu1{width:240px; height:71px; font-size:0.9em; line-height:71px; border-left:1px solid #7b7cc5; border-right:1px solid #3d3884; border-bottom:1px solid #3d3884; box-sizing:border-box; padding-left:10px;}
+				.menu1>a{ color:#6b64be; }
+				.menu2{width:240px; height:71px; background:#ffffff;  font-size:0.9em; line-height:71px; border-left:1px solid #ededed; border-right:1px solid #ededed; border-bottom:1px solid #ededed; box-sizing:border-box; padding-left:10px;}
+				.Img{float:right; margin-right:15px; margin-top:-5px;}
+		
+		.mainWrap{width:1420px; height:426px; margin:0 auto;}
+		.maincontent{width:1140px; height:470px; border:8px solid #f9f9f9; margin: 40px 0 0 284px;}
+		
+		.timeControl{width: 438px; margin-top: 7px; color:#ffffff;}
+		.timeBtn{display: block; float: right; width:82px; height:27px; margin-top: -1px;}
+		
+		.loginBox{width:660px; height:250px; margin-left:286px; padding-top:90px;}
+			.loginImg{width:180px; height:180px; margin-top:-10px;}
+			.InputBox{width:260px; height:100px;}
+				.loginInput1{width:200px; height:35px;}
+				.loginInput1>#userId{width:243px; height:37px; margin-top:5px; border:1px solid #dddddd; padding-left:7px;}
+				
+				.loginInput2>#userPw{width:243px; height:37px; margin-top:20px; border:1px solid #dddddd; padding-left:7px;}
+			
+			.loginBtn{width:200px; height:100px;}
+			.loginBtn>#loginbutton{width:100px; height:90px; background:#3d3884; color:#ffffff; margin:5px 0 0 5px; cursor:pointer;}
+			
+			.loginText>ul>li{float:left; margin:25px 10px 0 0; font-size:0.85em;}
+			.loginText>ul>li>a{color:#777777;}
+		
+		.loginExplain{width:1130px; height:150px; background:#f9f9f9; margin-top:55px;}
+		.loginExplain>ul{width:1000px; height:120px; margin:0 auto; padding:30px 0 0 40px;}
+		.loginExplain>ul>li{line-height:30px; color:#555555;}
+		.loginExplain>ul>li>a>span{color:#665ec4;}
+		
+		
+
+		
+		
+		
+		
+	
+	
+	
+	
+	/* 푸터 작업 */
+
+#footer1{width:100%; height:80px; background:#dddfe3;}
+.footerUp{width:1420px; height:80px; margin:0 auto;}
+	.fu_Wrap{width:1420px; height:80px;}
+		.fmenu{width:400px; height:80px; text-align:center; margin-left:3px; line-height:77px;}
+		.fmenu>ul>li{float:left; margin-right:15px;}
+		.fmenu>ul>li>a{display:block; font-size:0.9em;}
+		.fmenu>ul>li>a:hover{text-decoration:underline;}
+		.f_first>a{color:#618ac1; font-weight:bold;}
+		.f_last>a{color:#555555;}
+		
+		.finput{width:223px;}
+		.footerform>#manageCd{width:222px; height:40px; background-color:#ffffff; margin-top:20px;}
+
+	
+#footer2{width:100%; height:120px; background:#f2f4f7;}
+.fd_Wrap{width:1420px; height:120px; margin:0 auto;}	
+	.footerDown{width:1420px; height:120px;  margin:0 auto;}
+		.footerDown>p{float:left; width:1039px; color:#555555; margin:46px 145px 0 0px;}
+		.footerDown>address{float:left; width:1039px; color:#555555; margin:8px 145px 0 0px;}
+		.imgWrap{width:100px; height:70px; margin-top:-29px;}

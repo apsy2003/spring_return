@@ -1,0 +1,39 @@
+html{overflow-y : scroll; overflow-x : scroll;}
+*{margin : 0; padding : 0;}
+form, fieldset, input, img{border : 0;}
+button{border : 0 transparent; cursor : pointer; overflow : visible; background : transparent;}
+a{text-decoration : none;}
+body{ font-family: 'Noto Sans', '¸¼Àº °íµñ', 'Malgun Gothic', 'AppleGothic', sans-serif;}
+ul li{list-style : none;}
+a{text-decoration : none; color : #000000;}
+div{box-sizing: border-box;}
+.fl{float : left;}
+.fr{float : right;}
+.cb{clear : both;}
+.cf:after{content : ''; display : block; clear : both;}
+.hidden{display:none;}
+
+
+	
+/* ÇªÅÍ ÀÛ¾÷ */
+
+#footer1{width:100%; height:80px; background:#dddfe3;}
+.footerUp{width:1420px; height:80px; margin:0 auto;}
+	.fu_Wrap{width:1420px; height:80px;}
+		.fmenu{width:400px; height:80px; text-align:center; margin-left:3px; line-height:77px;}
+		.fmenu>ul>li{float:left; margin-right:15px;}
+		.fmenu>ul>li>a{display:block; font-size:0.9em;}
+		.fmenu>ul>li>a:hover{text-decoration:underline;}
+		.f_first>a{color:#618ac1; font-weight:bold;}
+		.f_last>a{color:#555555;}
+		
+		.finput{width:223px;}
+		.footerform>#manageCd{width:222px; height:40px; background-color:#ffffff; margin-top:20px;}
+
+	
+#footer2{width:100%; height:120px; background:#f2f4f7;}
+.fd_Wrap{width:1420px; height:120px; margin:0 auto;}	
+	.footerDown{width:1420px; height:120px;  margin:0 auto;}
+		.footerDown>p{float:left; width:1039px; color:#555555; margin:18px 145px 0 0px;}
+		.footerDown>address{float:left; width:1039px; color:#555555; margin:8px 145px 0 0px;}
+		.imgWrap{width:100px; height:70px; margin-top:-29px; }
