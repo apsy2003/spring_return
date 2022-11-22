@@ -10,20 +10,19 @@
             (#{title}, #{category}, #{price})
         ]]>
     </insert>
-    <!-- select 마이바티스에서 인식하는 태그:명령어 -->
-    <select id="select_detail" parameterType="hashMap" resultType="hashMap"> 
-        <![CDATA[
-        select
-            title, 
-            category, 
-            price,
-            insert_date
-        from
-        	book
-        where     
+	<select id="select_detail" parameterType="hashMap" resultType="hashMap">
+	    <![CDATA[
+	    select
+	        title,
+	        category,
+	        price,
+	        insert_date
+	    from
+	        book
+	    where
 	        book_id = #{bookId}
-        ]]>
-    </select>
+	    ]]>
+	</select>
     <update id="update" parameterType="hashMap">
         <![CDATA[
         update book set 
@@ -42,4 +41,22 @@
             book_id = #{bookId}
         ]]>
     </delete>
+
+    <select id="select_list" parameterType="hashMap" resultType="hashMap">
+	      <![CDATA[
+           select
+            book_id,
+            title,
+            category,
+            price,
+            insert_date
+            from
+            book
+            where 1 = 1
+        ]]>
+        <if test="keyword != null and keyword != ''">
+        	and (title like CONCAT('%',#{keyword}, '%') or category like CONCAT('%',#{keyword},'%'))
+        </if>
+        order by insert_date desc
+    </select>
 </mapper>

@@ -1,5 +1,6 @@
 package com.apsy.spring;
 
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,5 +41,10 @@ public class BookServicelmpl implements BookService{
         int affectRowCount = this.bookDao.delete(map);
         //삭제의 경우 수정과 동일하게 한 개의 행이 제대로 영향받았는지만 검사
         return affectRowCount == 1;
+    }  
+    
+    @Override
+    public List<Map<String, Object>> list(Map<String, Object> map){
+        return this.bookDao.selectList(map);
     }    
 }

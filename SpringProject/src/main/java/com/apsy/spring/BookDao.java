@@ -1,13 +1,15 @@
 package com.apsy.spring;
 
+import java.util.List;
 import java.util.Map;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+
 /*데이터에 접근하는 클래스임을 명시*/
-/*스프링이 데이터를 관리하는 클래스라고 인지해서 자바 빈(Java bean)으로 등록해서 관리*/
+/*스프링이 데이터를 관리하는 클래스라고 인지해서 자바 빈(java bean)으로 등록해서 관리*/
 @Repository
 public class BookDao {
 	/* sqlSessionTemplate 객체를 사용할 수 있게 */
@@ -29,6 +31,10 @@ public class BookDao {
 
     public int delete(Map<String, Object> map) {
         return this.sqlSessionTemplate.delete("book.delete", map);
+    }    
+    
+    public List<Map<String, Object>> selectList(Map<String, Object> map) {
+        return this.sqlSessionTemplate.selectList("book.select_list", map);
     }    
     
 }
